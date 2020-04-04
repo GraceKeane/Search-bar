@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name ="viewpoint"
+	content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?
+	family=Poppins&display=swap" rel="stylesheet">
+	<title> Search Bar </title>
+	
+<style>
+	*{
+	margin:0;
+	font-family: "Poppins", sans-serif;
+	}
+	body{
+		height:100vh;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		background:red;
+	}
+	nav ul{
+		display:flex;
+	}
+	nav ul{
+		list-style:none;
+	}
+	a{
+		position:relative;
+		color:#fff;
+		padding:11px 14px;
+		margin: 14px 4px;
+		text-decoration:none;
+		text-transform:uppercase;
+		border:1px  solid rgba(255, 255, 255, 0.0);
+		border-radius:5px;
+		transition:0.5s;
+	}
+	.active, a:hover{
+		border:1px solid rgba(255, 255, 255, 0.3);
+	}
+	a::before, a::after{
+		content:'';
+		position:absolute;
+		width:0px;
+		height:2px;
+		background:#fff;
+		left:50%;
+		transform:translate(-50%, 0%);
+		transition:inherit;
+	}
+	a::before{
+		top:0;
+	}
+	a::after{
+		bottom:0;
+	}
+	a:hover::before, a:hover::after,
+	.active::before, .active::after{
+		width:32px;
+	}
+</style>
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="#">Mercedes-Benz</a></li>
+			<li><a href="#">BMW</a></li>
+			<li><a href="#">porsche</a></li>
+			<li><a href="#">ferrari</a></li>
+			<li><a href="#">Lamborghini</a></li>
+		</ul>
+	</nav>
+</body>
+</html>
